@@ -13,14 +13,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
       .then(json => {
         this.setState({
           isLoaded: true,
           items: json,
         })
-      })
+      });
   }
 
   render() {
@@ -32,19 +32,17 @@ class App extends React.Component {
     } 
     
     else {
+      return (
       <ul>
-        {items.map(item => {
+        {items.map(item => (
           <li key={item.id}>
-            {item}
+            Name: {item.name} | Email: {item.email}
           </li>
-        })}
+        ))}
       </ul>
-    return(
-      <>
-      </>
-    )
-
-  }}
+      )
+    }
+  }
 }
 
 export default App;
