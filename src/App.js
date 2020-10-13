@@ -12,19 +12,23 @@ class App extends React.Component {
     }
   }
 
+
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(res => res.json())
-      .then(json => {
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    var targetUrl = 'https://www.goodreads.com/search.xml?key=jcL5pbHGsfI4UpskBzgxA&q=Ender%27s+Game';
+
+    fetch(proxyUrl+targetUrl)
+      .then(res => res.text())
+      .then(xml => {
         this.setState({
           isLoaded: true,
-          items: json,
+          items: xml,
         })
       });
+      debugger
   }
 
   render() {
-
     var { isLoaded, items } = this.state;
 
     if (!isLoaded) {
@@ -33,13 +37,9 @@ class App extends React.Component {
     
     else {
       return (
-      <ul>
-        {items.map(item => (
-          <li key={item.id}>
-            Name: {item.name} | Email: {item.email}
-          </li>
-        ))}
-      </ul>
+        <>
+        <h1>Hey!</h1>
+        </>
       )
     }
   }
