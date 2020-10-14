@@ -1,48 +1,28 @@
-import React from 'react';
+import Axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/ui/Header';
 
-class App extends React.Component {
+const App = () => {
+  const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      champion: null,
-      items: [],
-      isLoaded: false,
+  useEffect(() => { //whenenver useEffect gets run, add return () => {} which will run prior to useEffect running again
+    const fetchItems = async () => {
+      const result = await Axios('https://www.breakingbadapi.com/api/characters')
+      console.log(result.data)
+      setItems(result.data)
+      setIsLoading(false);
     }
-  }
+    fetchItems();
+  }, [])
 
 
-  componentDidMount() {
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    var targetUrl = 'https://www.goodreads.com/search.xml?key=jcL5pbHGsfI4UpskBzgxA&q=Ender%27s+Game';
-
-    fetch(proxyUrl+targetUrl)
-      .then(res => res.text())
-      .then(xml => {
-        this.setState({
-          isLoaded: true,
-          items: xml,
-        })
-      });
-      debugger
-  }
-
-  render() {
-    var { isLoaded, items } = this.state;
-
-    if (!isLoaded) {
-      return <div>Loading...</div>
-    } 
-    
-    else {
-      return (
-        <>
-        <h1>Hey!</h1>
-        </>
-      )
-    }
-  }
+  return (
+  <div className='container'>
+    <Header />
+  </div>
+  )
 }
 
 export default App;
