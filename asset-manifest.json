@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mtg-cardlookup/static/css/main.f092734e.chunk.css",
+    "main.css": "/mtg-cardlookup/static/css/main.5c176efc.chunk.css",
     "main.js": "/mtg-cardlookup/static/js/main.dde918c7.chunk.js",
     "main.js.map": "/mtg-cardlookup/static/js/main.dde918c7.chunk.js.map",
     "runtime-main.js": "/mtg-cardlookup/static/js/runtime-main.a8be21b6.js",
@@ -8,9 +8,9 @@
     "static/js/2.690b9eb5.chunk.js": "/mtg-cardlookup/static/js/2.690b9eb5.chunk.js",
     "static/js/2.690b9eb5.chunk.js.map": "/mtg-cardlookup/static/js/2.690b9eb5.chunk.js.map",
     "index.html": "/mtg-cardlookup/index.html",
-    "precache-manifest.1e4eaaecaa85c8c24f2a7b0e272efe6e.js": "/mtg-cardlookup/precache-manifest.1e4eaaecaa85c8c24f2a7b0e272efe6e.js",
+    "precache-manifest.2106cd16d78fb245fdf3e86dc3253509.js": "/mtg-cardlookup/precache-manifest.2106cd16d78fb245fdf3e86dc3253509.js",
     "service-worker.js": "/mtg-cardlookup/service-worker.js",
-    "static/css/main.f092734e.chunk.css.map": "/mtg-cardlookup/static/css/main.f092734e.chunk.css.map",
+    "static/css/main.5c176efc.chunk.css.map": "/mtg-cardlookup/static/css/main.5c176efc.chunk.css.map",
     "static/js/2.690b9eb5.chunk.js.LICENSE.txt": "/mtg-cardlookup/static/js/2.690b9eb5.chunk.js.LICENSE.txt",
     "static/media/App.css": "/mtg-cardlookup/static/media/bg.3ba2e0c9.jpg",
     "static/media/spinner.gif": "/mtg-cardlookup/static/media/spinner.235b9b3e.gif"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.a8be21b6.js",
     "static/js/2.690b9eb5.chunk.js",
-    "static/css/main.f092734e.chunk.css",
+    "static/css/main.5c176efc.chunk.css",
     "static/js/main.dde918c7.chunk.js"
   ]
 }
