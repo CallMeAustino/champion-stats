@@ -5,6 +5,8 @@ import Header from './components/ui/Header';
 import CharacterGrid from './components/characters/CharacterGrid';
 import Search from './components/ui/Search';
 
+const mtg = require('mtgsdk');
+
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -14,8 +16,10 @@ const App = () => {
 
   useEffect(() => { //whenenver useEffect gets run, add return () => {} which will run prior to useEffect running again
     const fetchItems = async () => {
-      const result = await Axios(`https://www.breakingbadapi.com/api/characters?name=${query}`)
-      setItems(result.data)
+      // const result = await Axios(`https://www.breakingbadapi.com/api/characters?name=${query}`)
+      const result = await mtg.card.find(query)
+      console.log(result);
+      setItems(result)
       setIsLoading(false);
     }
     fetchItems();

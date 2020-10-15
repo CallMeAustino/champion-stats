@@ -3,9 +3,10 @@ import SpinningGif from '../../img/spinner.gif'
 
 const Spinner = () => {
     return (
-        <div>
-            <img src={SpinningGif} style={{ width: '200px', margin: 'auto', display: 'block'}}/>
-        </div>
+        <h1 className='center'>
+            Enter a card number to generate a card!
+            {/* <img src={SpinningGif} style={{ width: '200px', margin: 'auto', display: 'block'}}/> */}
+        </h1>
     )
 }
 
