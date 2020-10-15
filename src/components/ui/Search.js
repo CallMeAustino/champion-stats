@@ -4,7 +4,7 @@ import $ from 'jquery';
 const Search = ( { getQuery } ) => {
 
     var typingTimer;                //timer identifier
-    var doneTypingInterval = 1000;  //time in ms (5 seconds)
+    var doneTypingInterval = 2000;  //time in ms (5 seconds)
 
     //on keyup, start the countdown
     $('#myInput').keyup(function(){

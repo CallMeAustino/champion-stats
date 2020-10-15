@@ -4,7 +4,7 @@ import Spinner from '../ui/Spinner';
 
 const CharacterGrid = ({ items, isLoading} ) => {
 
-    return (items.length === 0 || items.length >= 100) ? (<Spinner />) : (
+    return (items.length === 0 || items.length >= 100) ? (<Spinner items={items} />) : (
         <section className='cards'>
             {items.map(item => {
                 if (item.imageUrl === undefined ) {
