@@ -13,7 +13,7 @@ const Search = ( { getQuery } ) => {
                 onChange={(e) => onChange(e.target.value)}
                 type='text'
                 className='form-control'
-                placeholder='Search characters'
+                placeholder='Type in a card name'
                 autoFocus
                 value={text}
                 ></input>  
