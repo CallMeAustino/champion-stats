@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mtg-cardlookup/precache-manifest.76f324e1e0d81c2f88938cad60b2e18e.js"
+  "/mtg-cardlookup/precache-manifest.85311fd1372a85f5005590abc81def0e.js"
 );
 
 self.addEventListener('message', (event) => {

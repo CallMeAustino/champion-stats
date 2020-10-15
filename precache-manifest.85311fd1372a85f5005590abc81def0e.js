@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "349e49402d6fbd96c61c1b9fedc79aa1",
+    "revision": "8e56a78c0c660f1b73366c0c27921738",
     "url": "/mtg-cardlookup/index.html"
   },
   {
-    "revision": "20b381070b00995c334b",
+    "revision": "a99f572956c203c5f45c",
     "url": "/mtg-cardlookup/static/css/main.f092734e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mtg-cardlookup/static/js/2.690b9eb5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20b381070b00995c334b",
-    "url": "/mtg-cardlookup/static/js/main.159757d5.chunk.js"
+    "revision": "a99f572956c203c5f45c",
+    "url": "/mtg-cardlookup/static/js/main.23187af7.chunk.js"
   },
   {
     "revision": "3b7bc2ac4b3bf93f43de",
