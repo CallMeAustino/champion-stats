@@ -16,8 +16,7 @@ const App = () => {
 
   useEffect(() => { //whenenver useEffect gets run, add return () => {} which will run prior to useEffect running again
     const fetchItems = async () => {
-      // const result = await Axios(`https://www.breakingbadapi.com/api/characters?name=${query}`)
-      const result = await mtg.card.where(`{name: '${query}'}`)
+      const result = await mtg.card.where({name: query})
       console.log(result);
       setItems(result)
       setIsLoading(false);

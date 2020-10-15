@@ -3,12 +3,18 @@ import CharacterItem from './CharacterItem';
 import Spinner from '../ui/Spinner';
 
 const CharacterGrid = ({ items, isLoading} ) => {
-    return (items.card === undefined) ? (<Spinner />) : (
+
+    return (items.length === 0 || items.length >= 100) ? (<Spinner />) : (
         <section className='cards'>
-            <CharacterItem key={items.card.multiverseid} item={items.card}></CharacterItem>
-            {/* {items.map(item => (
-                <CharacterItem key={item.char_id} item={item}></CharacterItem>
-            ))} */}
+            {items.map(item => {
+                if (item.imageUrl === undefined ) {
+                    return;
+                } else {
+                    return(
+                    <CharacterItem key={item.multiverseid} item={item}></CharacterItem>
+                    )
+                }
+            })}
         </section>
     )
 }
