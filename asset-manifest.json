@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/mtg-cardfinder/static/css/main.25fc6d12.chunk.css",
-    "main.js": "/mtg-cardfinder/static/js/main.eeb747af.chunk.js",
-    "main.js.map": "/mtg-cardfinder/static/js/main.eeb747af.chunk.js.map",
-    "runtime-main.js": "/mtg-cardfinder/static/js/runtime-main.bb6010fa.js",
-    "runtime-main.js.map": "/mtg-cardfinder/static/js/runtime-main.bb6010fa.js.map",
-    "static/js/2.82fb313e.chunk.js": "/mtg-cardfinder/static/js/2.82fb313e.chunk.js",
-    "static/js/2.82fb313e.chunk.js.map": "/mtg-cardfinder/static/js/2.82fb313e.chunk.js.map",
-    "index.html": "/mtg-cardfinder/index.html",
-    "precache-manifest.46f1d109fc360c451d87fa2917224659.js": "/mtg-cardfinder/precache-manifest.46f1d109fc360c451d87fa2917224659.js",
-    "service-worker.js": "/mtg-cardfinder/service-worker.js",
-    "static/css/main.25fc6d12.chunk.css.map": "/mtg-cardfinder/static/css/main.25fc6d12.chunk.css.map",
-    "static/js/2.82fb313e.chunk.js.LICENSE.txt": "/mtg-cardfinder/static/js/2.82fb313e.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/mtg-cardfinder/static/media/bg.3ba2e0c9.jpg",
-    "static/media/spinner.gif": "/mtg-cardfinder/static/media/spinner.235b9b3e.gif"
+    "main.css": "/mtg-cardlookup/static/css/main.f092734e.chunk.css",
+    "main.js": "/mtg-cardlookup/static/js/main.2b1641b9.chunk.js",
+    "main.js.map": "/mtg-cardlookup/static/js/main.2b1641b9.chunk.js.map",
+    "runtime-main.js": "/mtg-cardlookup/static/js/runtime-main.a8be21b6.js",
+    "runtime-main.js.map": "/mtg-cardlookup/static/js/runtime-main.a8be21b6.js.map",
+    "static/js/2.2df97dba.chunk.js": "/mtg-cardlookup/static/js/2.2df97dba.chunk.js",
+    "static/js/2.2df97dba.chunk.js.map": "/mtg-cardlookup/static/js/2.2df97dba.chunk.js.map",
+    "index.html": "/mtg-cardlookup/index.html",
+    "precache-manifest.b3966217645f1537ab16d5df990f5503.js": "/mtg-cardlookup/precache-manifest.b3966217645f1537ab16d5df990f5503.js",
+    "service-worker.js": "/mtg-cardlookup/service-worker.js",
+    "static/css/main.f092734e.chunk.css.map": "/mtg-cardlookup/static/css/main.f092734e.chunk.css.map",
+    "static/js/2.2df97dba.chunk.js.LICENSE.txt": "/mtg-cardlookup/static/js/2.2df97dba.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/mtg-cardlookup/static/media/bg.3ba2e0c9.jpg",
+    "static/media/spinner.gif": "/mtg-cardlookup/static/media/spinner.235b9b3e.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb6010fa.js",
-    "static/js/2.82fb313e.chunk.js",
-    "static/css/main.25fc6d12.chunk.css",
-    "static/js/main.eeb747af.chunk.js"
+    "static/js/runtime-main.a8be21b6.js",
+    "static/js/2.2df97dba.chunk.js",
+    "static/css/main.f092734e.chunk.css",
+    "static/js/main.2b1641b9.chunk.js"
   ]
 }
