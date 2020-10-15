@@ -1,1 +1,1 @@
-Developed this because I had some free time and I wanted to play with the Riot API
+Developed this because I had some free time and I was sick of my friends asking me what cards do
