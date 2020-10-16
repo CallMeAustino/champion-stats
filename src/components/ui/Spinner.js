@@ -1,12 +1,13 @@
 import React from 'react'
 import SpinningGif from '../../img/spinner.gif'
 
-const Spinner = ({ items }) => {
-    if ( items.length === 100 ) {
+const Spinner = ({ items, isLoading }) => {
+    if ( isLoading === true ) {
         return (
-            <h1 className='center'>
-                Please type in a more specific search!
-            </h1>
+            <img style={{textAlign: 'center'}} src={SpinningGif}></img>
+            // <h1 className='center'>
+            //     Please type in a more specific search!
+            // </h1>
         )
     } else {
     return (
