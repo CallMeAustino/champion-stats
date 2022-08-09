@@ -15,11 +15,9 @@ const App = () => {
 
 
   useEffect(() => { //whenenver useEffect gets run, add return () => {} which will run prior to useEffect running again
-<<<<<<< HEAD
-  setIsLoading(true); //unnecessary as this is set by default on line 13.
-=======
   setIsLoading(true); //test comment
->>>>>>> master
+  setIsLoading(true); //unnecessary as this is set by default on line 13.
+
     const fetchItems = async () => {
       const result = await mtg.card.where({name: query})
       console.log(result);
