@@ -14,7 +14,9 @@ const CharacterGrid = ({ items, isLoading} ) => {
                     return;
                 } else {
                     return(
-                    <CharacterItem key={item.multiverseid} item={item}></CharacterItem>
+                    <React.Fragment key={item.multiverseid}>
+                        <CharacterItem item={item}></CharacterItem>
+                    </React.Fragment>
                     )
                 }
             })}
