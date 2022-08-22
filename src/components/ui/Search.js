@@ -6,13 +6,6 @@ const Search = ( { getQuery } ) => {
     var typingTimer;                //timer identifier
     var doneTypingInterval = 2000;  //time in ms (2 seconds)
 
-    // on keyup, start the countdown
-    $('#myInput').keyup(function(){
-        clearTimeout(typingTimer);
-        if ($('#myInput').val()) {
-            typingTimer = setTimeout(doneTyping, doneTypingInterval);
-        }
-    });
 
     //user is "finished typing," do something
     function doneTyping () {
@@ -25,9 +18,15 @@ const Search = ( { getQuery } ) => {
         // getQuery(q)
     }
 
+    const handleSubmit = event => { //search executed upon pressing "enter"
+        event.preventDefault();
+        doneTyping()
+        console.log('form submitted ✅');
+      };
+
     return (
         <section className='search'>
-            <form>
+            <form onSubmit={(handleSubmit)}>
                 <input
                 id="myInput"
                 onChange={(e) => onChange(e.target.value)}
@@ -37,9 +36,11 @@ const Search = ( { getQuery } ) => {
                 autoFocus
                 value={text}
                 ></input>  
+            <button type="submit">Submit</button>
             </form>
         </section>
     )
 }
 
 export default Search
+

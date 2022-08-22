@@ -52,14 +52,28 @@ header img {
   height: 100px;
 }
 
+form {
+  text-align: center;
+}
+
 input[type='text'] {
-  display: block;
+  display: inline;
   padding: 10px;
   font-size: 20px;
   border: 0;
   border-radius: 5px;
   width: 60%;
   margin: auto;
+  text-align: center;
+}
+
+button {
+height: 42.5px;
+font-size: 20px;
+border: 3px;
+border-radius: 6px;
+padding: 8px;
+margin: 0px 0px 0px 10px;
 }
 
 .cards {
