@@ -2,7 +2,7 @@ import React from 'react';
 import CharacterItem from './CharacterItem';
 import Spinner from '../ui/Spinner';
 
-const CharacterGrid = ({ items, isLoading} ) => {
+const CharacterGrid = ({ items, isLoading } ) => {
 
     return (isLoading === true) ? 
         <section>

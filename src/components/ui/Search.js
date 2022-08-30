@@ -5,17 +5,15 @@ const Search = ( { getQuery } ) => {
 
     var typingTimer;                //timer identifier
     var doneTypingInterval = 2000;  //time in ms (2 seconds)
-
+    const [text, setText] = useState('');
 
     //user is "finished typing," do something
     function doneTyping () {
         getQuery($('#myInput').val())
     }
-    const [text, setText] = useState('');
 
     const onChange = (q) => {
         setText(q)
-        // getQuery(q)
     }
 
     const handleSubmit = event => { //search executed upon pressing "enter"
